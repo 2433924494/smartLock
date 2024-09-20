@@ -1,3 +1,4 @@
+.gitignore
 *.log
 Baidu_keys.json
 room_info.json
