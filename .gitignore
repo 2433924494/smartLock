@@ -1,0 +1,9 @@
+*.log
+Baidu_keys.json
+room_info.json
+/log
+/.vscode
+/Strangers
+/build
+/install
+face_interfaces.db

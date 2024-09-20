@@ -1,0 +1,59 @@
+2024-08-21 18:06:34,904 - root - INFO - Name:Áè½¨½Ü
+2024-08-21 18:06:35,057 - root - WARNING - Request API failed! Erro:Open api qps request limit reached
+2024-08-21 18:06:36,048 - root - INFO - Name:Áè½¨½Ü
+2024-08-21 18:06:37,021 - root - INFO - Name:Áè½¨½Ü
+2024-08-21 18:06:37,970 - root - INFO - Name:Áè½¨½Ü
+2024-08-21 18:06:38,966 - root - INFO - Name:Áè½¨½Ü
+2024-08-21 18:06:39,988 - root - INFO - Name:Áè½¨½Ü
+2024-08-21 18:06:41,008 - root - INFO - Name:Áè½¨½Ü
+2024-08-21 18:06:42,027 - root - INFO - Name:Áè½¨½Ü
+2024-08-21 18:06:43,039 - root - INFO - Name:Áè½¨½Ü
+2024-08-21 18:06:43,990 - root - INFO - Name:Áè½¨½Ü
+2024-08-21 18:06:44,937 - root - INFO - Name:Áè½¨½Ü
+2024-08-21 18:06:46,029 - root - INFO - Name:Áè½¨½Ü
+2024-08-29 14:31:05,224 - urllib3.poolmanager - INFO - Redirecting https://baidu.com -> http://www.baidu.com/
+2024-08-29 14:31:06,743 - urllib3.poolmanager - INFO - Redirecting https://baidu.com -> http://www.baidu.com/
+2024-08-29 14:31:08,197 - urllib3.poolmanager - INFO - Redirecting https://baidu.com -> http://www.baidu.com/
+2024-08-29 14:31:09,700 - urllib3.poolmanager - INFO - Redirecting https://baidu.com -> http://www.baidu.com/
+2024-08-29 14:31:11,207 - urllib3.poolmanager - INFO - Redirecting https://baidu.com -> http://www.baidu.com/
+2024-08-30 15:27:59,934 - asyncio - ERROR - Cancelling an overlapped future failed
+future: <_OverlappedFuture pending overlapped=<pending, 0x1e1cfcedf70> cb=[BaseProactorEventLoop._loop_self_reading()]>
+Traceback (most recent call last):
+  File "C:\Python38\lib\asyncio\runners.py", line 43, in run
+    return loop.run_until_complete(main)
+  File "C:\Python38\lib\asyncio\base_events.py", line 603, in run_until_complete
+    self.run_forever()
+  File "C:\Python38\lib\asyncio\windows_events.py", line 316, in run_forever
+    super().run_forever()
+  File "C:\Python38\lib\asyncio\base_events.py", line 570, in run_forever
+    self._run_once()
+  File "C:\Python38\lib\asyncio\base_events.py", line 1859, in _run_once
+    handle._run()
+  File "C:\Python38\lib\asyncio\events.py", line 81, in _run
+    self._context.run(self._callback, *self._args)
+  File "E:\ros2_ws\src\install\face_recognition\Lib\site-packages\face_recognition\FaceRecognitionPublisher.py", line 167, in mainTask
+    rclpy.spin(node)
+  File "E:\dev\ros2_humble\Lib\site-packages\rclpy\__init__.py", line 222, in spin
+    executor.spin_once()
+  File "E:\dev\ros2_humble\Lib\site-packages\rclpy\executors.py", line 739, in spin_once
+    self._spin_once_impl(timeout_sec)
+  File "E:\dev\ros2_humble\Lib\site-packages\rclpy\executors.py", line 728, in _spin_once_impl
+    handler, entity, node = self.wait_for_ready_callbacks(timeout_sec=timeout_sec)
+  File "E:\dev\ros2_humble\Lib\site-packages\rclpy\executors.py", line 711, in wait_for_ready_callbacks
+    return next(self._cb_iter)
+  File "E:\dev\ros2_humble\Lib\site-packages\rclpy\executors.py", line 608, in _wait_for_ready_callbacks
+    wait_set.wait(timeout_nsec)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python38\lib\asyncio\windows_events.py", line 66, in _cancel_overlapped
+    self._ov.cancel()
+OSError: [WinError 6] ¾ä±úÎÞÐ§¡£
+2024-08-30 15:28:35,783 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<Publisher.process_video() done, defined at E:\ros2_ws\src\install\face_recognition\Lib\site-packages\face_recognition\FaceRecognitionPublisher.py:84> exception=AttributeError("'function' object has no attribute 'info'")>
+Traceback (most recent call last):
+  File "E:\ros2_ws\src\install\face_recognition\Lib\site-packages\face_recognition\FaceRecognitionPublisher.py", line 85, in process_video
+    self.get_logger.info('Video process start!')
+AttributeError: 'function' object has no attribute 'info'
